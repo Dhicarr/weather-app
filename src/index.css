@@ -1,3 +1,6 @@
+html, body, #root, .App {
+  height: 100%;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,42 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-size: 100vw 100vh;
+  overflow:hidden;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App{
+  display: block;
+  text-align: center;
+}
+.Weather_Info{
+  display: block;
+  margin-top: 15vw;
+}
+.Form{
+  width: fit-content;
+  margin-top:0.5vw;
+}
+.City{
+  display:block;
+  background-color: rgba(255,255,255, 0.7);
+  border-radius: 0.5em;
+  width: fit-content;
+  margin: auto;
+  padding:1vw;
+  margin-bottom: 1vw;
+}
+.Info{
+  display:block;
+  background-color: rgba(255,255,255, 0.7);
+  border-radius: 0.5em;
+  width: fit-content;
+  margin: auto;
+  padding:1vw;
+}
+.Input{
+  width: fit-content;
+  margin: auto;
+}
+.Button{
+  margin-top: 0.5vw;
 }
