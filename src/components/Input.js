@@ -11,7 +11,7 @@ const Input = ({set,setCity1,setCountry1}) => {
         e.preventDefault();
         axios({
             method: "GET",
-            url: `http://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=7cd63382664d9029b0f4013e5f6057d3`,
+            url: `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&APPID=7cd63382664d9029b0f4013e5f6057d3`,
         })
         .then((response) => {
             console.log(response.data);
